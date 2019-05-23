@@ -69,7 +69,7 @@ public class ProductController {
 	try {
 		
 		byte bytearry[]= image.getBytes();
-		File file=new File("D://dt20projects/eshop/src/main/webapp/resources/product-imgs/"+product.getProductId()+".jpg");
+		File file=new File("D://dt20project11/eshop/src/main/webapp/resources/product-imgs/"+product.getProductId()+".jpg");
 		FileOutputStream fos=new FileOutputStream(file);
 	bos =new BufferedOutputStream(fos);
 	bos.write(bytearry);
