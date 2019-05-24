@@ -155,7 +155,7 @@ public class ProductController {
 	@RequestMapping("/productdetails")
 	public ModelAndView retrieveSingleProduct(@RequestParam("proId") int productId )
 	{
-	ModelAndView  modelAndView=new ModelAndView("productdetails");
+	ModelAndView  modelAndView=new ModelAndView("oneproduct");
 	Product product = ProductDaoImpl.getProduct(productId);	
 	modelAndView.addObject("pro",product);
 	return modelAndView;

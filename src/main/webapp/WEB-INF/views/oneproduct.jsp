@@ -14,5 +14,12 @@ ${pro.productDescription}
 ${pro.productPrice}
 <td>${pro.productCategory}
 ${pro.productSupplier}
+
+<form action="addtocart"  method="post" >
+<input type="hidden"  name="proId"  value="${pro.productId}" />
+<input type="number" name="proQuantity" min="1" max="5" />
+<input type="submit"  value="AddToCart">
+</form>
+
 </body>
 </html>

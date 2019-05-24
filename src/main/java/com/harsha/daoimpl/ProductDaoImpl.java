@@ -9,6 +9,7 @@ import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+
 import com.harsha.model.Product;
 
 
@@ -61,5 +62,6 @@ public Product getProduct(int ProductId)
 	transaction.commit();
 	session.close();
 	}
+	
 	
 }

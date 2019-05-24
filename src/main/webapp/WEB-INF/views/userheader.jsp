@@ -11,7 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
   <a class="navbar-brand" href="home">Ecomm</a>
 
@@ -35,7 +35,15 @@
       </div>
     </li>
     
-    
+    <li class="nav-item">
+      <a class="nav-link" href="showcart">cart</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="register">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login">Login</a>
+    </li>
   </ul>
 </nav>
 <br>
