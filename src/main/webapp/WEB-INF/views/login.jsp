@@ -14,7 +14,7 @@
 <hr>
 </div>
 <div>
-<sf:form action="login" method="post" modelAttribute="user">
+<sf:form action="loginsuccess" method="post" modelAttribute="user">
 Email <sf:input path="email" />
 Pasword <sf:input path="password" />
 
@@ -23,7 +23,7 @@ Pasword <sf:input path="password" />
 <input type="submit"  value="Login" />
 
 </sf:form>
-<h2> ${logininfo}</h2>
+<h2> ${loginerrormsg}</h2>
 </div>
 </body>
 </html>

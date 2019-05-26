@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="home">Ecomm</a>
+  <a class="navbar-brand" href="userhome">Ecomm</a>
 
   <!-- Links -->
   <ul class="navbar-nav">
@@ -43,6 +43,9 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" href="login">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="logout">Logout</a>
     </li>
   </ul>
 </nav>
