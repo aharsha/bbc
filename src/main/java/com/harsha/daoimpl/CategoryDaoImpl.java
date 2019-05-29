@@ -10,11 +10,12 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.harsha.dao.CategoryDao;
 import com.harsha.model.Category;
 
-@Component
+@Component("categoryDaoImpl")
 public class CategoryDaoImpl implements CategoryDao {
 
 	@Autowired
@@ -26,7 +27,7 @@ public class CategoryDaoImpl implements CategoryDao {
 		return true;
 	}
 	
-	public void saveCategory(Category category)
+	public boolean saveCategory(Category category)
 	{
 		if(category.getCategoryId()==0)
 		{
@@ -35,11 +36,21 @@ public class CategoryDaoImpl implements CategoryDao {
 		System.out.println("no id in object");
 		}
 		Session  session=sessionFactory.openSession();
-
+try
+{
 		session.saveOrUpdate(category);
 		Transaction transaction=session.beginTransaction();
 		transaction.commit();
-		session.close();
+		return true;
+}
+catch(Exception e)
+{
+	return false;
+}
+finally {
+	session.close();
+}
+		
 		
 	}
 	
